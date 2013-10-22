@@ -22,4 +22,4 @@ To start a web server for the application, run:
 
 ## License
 
-Copyright © 2013 Apache License
+Copyright © 2013 Eclipse License
