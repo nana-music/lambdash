@@ -1,0 +1,76 @@
+@import "compass/reset";
+@import "compass/typography/links/link-colors";
+@import "susy";
+
+$title_background: black;
+
+header {
+    
+    a {
+        text-decoration: none;
+    }
+    
+    // Title
+    h1 {
+        border-bottom: 2px solid #333;
+        color: white;
+        background-color: black;
+        font-size: xx-large;
+        padding: 16px;
+    }
+}
+
+h2 {
+    font-size: x-large;
+    font-weight: bold;
+    padding: 12px;
+    color: #990000;
+    background-color: #FFAA66;
+}
+
+$data-show-color: #336600;
+
+li {
+    font-weight: bold;
+    text-align: right;
+    font-size: xx-large;
+    border-left: 30px solid $data-show-color;
+    border-bottom: 1px dashed $data-show-color;
+    padding-right: 6px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+}
+
+.subtitle{
+    font-weight: none;
+    text-align: left;
+    font-size: medium;
+    border-left: none;
+    border-bottom: none;
+    padding: 12px;
+    font-weight: bold;
+    background-color: #AAFF66;
+}
+
+$default-columns: 3;
+$total-columns: 9;
+$column-border-color: #003311;
+
+.link {
+    padding-left: 12px;
+    text-align: left;
+    font-size: medium;
+    color: #993300;
+    background-color: #FFDDAA;
+    border-color: #993300;
+    a { 
+        @include link-colors(#993300);
+    }
+}
+
+.column {
+    @include span-columns($default-columns, $total-columns);
+    margin-left: 12px;
+    border: 3px solid $column-border-color;
+    border-top: none;
+}

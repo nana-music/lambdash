@@ -1,0 +1,56 @@
+/*
+Syntax error: File to import not found or unreadable: compass/reset.
+              Load paths:
+                /home/esehara/Code/Clojure/lambdash/resources/public/sass
+                /home/esehara/Code/Clojure/lambdash/resources/public/sass
+        on line 6 of /home/esehara/Code/Clojure/lambdash/resources/public/sass/screen.scss
+
+1: /* Welcome to Compass.
+2:  * In this file you should write your main styles. (or centralize your imports)
+3:  * Import this file using the following HTML or equivalent:
+4:  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+5: 
+6: @import "compass/reset";
+
+Backtrace:
+/home/esehara/Code/Clojure/lambdash/resources/public/sass/screen.scss:6
+/home/esehara/.rvm/gems/ruby-1.9.3-p327/gems/sass-3.2.5/lib/sass/tree/import_node.rb:67:in `rescue in import'
+/home/esehara/.rvm/gems/ruby-1.9.3-p327/gems/sass-3.2.5/lib/sass/tree/import_node.rb:45:in `import'
+/home/esehara/.rvm/gems/ruby-1.9.3-p327/gems/sass-3.2.5/lib/sass/tree/import_node.rb:28:in `imported_file'
+/home/esehara/.rvm/gems/ruby-1.9.3-p327/gems/sass-3.2.5/lib/sass/tree/import_node.rb:37:in `css_import?'
+/home/esehara/.rvm/gems/ruby-1.9.3-p327/gems/sass-3.2.5/lib/sass/tree/visitors/perform.rb:215:in `visit_import'
+/home/esehara/.rvm/gems/ruby-1.9.3-p327/gems/sass-3.2.5/lib/sass/tree/visitors/base.rb:37:in `visit'
+/home/esehara/.rvm/gems/ruby-1.9.3-p327/gems/sass-3.2.5/lib/sass/tree/visitors/perform.rb:98:in `visit'
+/home/esehara/.rvm/gems/ruby-1.9.3-p327/gems/sass-3.2.5/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
+/home/esehara/.rvm/gems/ruby-1.9.3-p327/gems/sass-3.2.5/lib/sass/tree/visitors/base.rb:53:in `map'
+/home/esehara/.rvm/gems/ruby-1.9.3-p327/gems/sass-3.2.5/lib/sass/tree/visitors/base.rb:53:in `visit_children'
+/home/esehara/.rvm/gems/ruby-1.9.3-p327/gems/sass-3.2.5/lib/sass/tree/visitors/perform.rb:107:in `block in visit_children'
+/home/esehara/.rvm/gems/ruby-1.9.3-p327/gems/sass-3.2.5/lib/sass/tree/visitors/perform.rb:119:in `with_environment'
+/home/esehara/.rvm/gems/ruby-1.9.3-p327/gems/sass-3.2.5/lib/sass/tree/visitors/perform.rb:106:in `visit_children'
+/home/esehara/.rvm/gems/ruby-1.9.3-p327/gems/sass-3.2.5/lib/sass/tree/visitors/base.rb:37:in `block in visit'
+/home/esehara/.rvm/gems/ruby-1.9.3-p327/gems/sass-3.2.5/lib/sass/tree/visitors/perform.rb:126:in `visit_root'
+/home/esehara/.rvm/gems/ruby-1.9.3-p327/gems/sass-3.2.5/lib/sass/tree/visitors/base.rb:37:in `visit'
+/home/esehara/.rvm/gems/ruby-1.9.3-p327/gems/sass-3.2.5/lib/sass/tree/visitors/perform.rb:98:in `visit'
+/home/esehara/.rvm/gems/ruby-1.9.3-p327/gems/sass-3.2.5/lib/sass/tree/visitors/perform.rb:7:in `visit'
+/home/esehara/.rvm/gems/ruby-1.9.3-p327/gems/sass-3.2.5/lib/sass/tree/root_node.rb:20:in `render'
+/home/esehara/.rvm/gems/ruby-1.9.3-p327/gems/sass-3.2.5/lib/sass/engine.rb:315:in `_render'
+/home/esehara/.rvm/gems/ruby-1.9.3-p327/gems/sass-3.2.5/lib/sass/engine.rb:262:in `render'
+/home/esehara/.rvm/gems/ruby-1.9.3-p327/gems/sass-3.2.5/lib/sass/plugin/compiler.rb:341:in `update_stylesheet'
+/home/esehara/.rvm/gems/ruby-1.9.3-p327/gems/sass-3.2.5/lib/sass/plugin/compiler.rb:203:in `block in update_stylesheets'
+/home/esehara/.rvm/gems/ruby-1.9.3-p327/gems/sass-3.2.5/lib/sass/plugin/compiler.rb:201:in `each'
+/home/esehara/.rvm/gems/ruby-1.9.3-p327/gems/sass-3.2.5/lib/sass/plugin/compiler.rb:201:in `update_stylesheets'
+/home/esehara/.rvm/gems/ruby-1.9.3-p327/gems/sass-3.2.5/lib/sass/plugin.rb:81:in `update_stylesheets'
+/home/esehara/.rvm/gems/ruby-1.9.3-p327/gems/sass-3.2.5/lib/sass/exec.rb:424:in `watch_or_update'
+/home/esehara/.rvm/gems/ruby-1.9.3-p327/gems/sass-3.2.5/lib/sass/exec.rb:307:in `process_result'
+/home/esehara/.rvm/gems/ruby-1.9.3-p327/gems/sass-3.2.5/lib/sass/exec.rb:41:in `parse'
+/home/esehara/.rvm/gems/ruby-1.9.3-p327/gems/sass-3.2.5/lib/sass/exec.rb:21:in `parse!'
+/home/esehara/.rvm/gems/ruby-1.9.3-p327/gems/sass-3.2.5/bin/sass:8:in `<top (required)>'
+/home/esehara/.rvm/gems/ruby-1.9.3-p327/bin/sass:19:in `load'
+/home/esehara/.rvm/gems/ruby-1.9.3-p327/bin/sass:19:in `<main>'
+/home/esehara/.rvm/gems/ruby-1.9.3-p327/bin/ruby_noexec_wrapper:14:in `eval'
+/home/esehara/.rvm/gems/ruby-1.9.3-p327/bin/ruby_noexec_wrapper:14:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Syntax error: File to import not found or unreadable: compass/reset.\A               Load paths:\A                 /home/esehara/Code/Clojure/lambdash/resources/public/sass\A                 /home/esehara/Code/Clojure/lambdash/resources/public/sass\A         on line 6 of /home/esehara/Code/Clojure/lambdash/resources/public/sass/screen.scss\A \A 1: /* Welcome to Compass.\A 2:  * In this file you should write your main styles. (or centralize your imports)\A 3:  * Import this file using the following HTML or equivalent:\A 4:  * <link href=\"/stylesheets/screen.css\" media=\"screen, projection\" rel=\"stylesheet\" type=\"text/css\" /> */\A 5: \A 6: @import \"compass/reset\";"; }

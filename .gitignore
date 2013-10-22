@@ -1,0 +1,15 @@
+.sass-cache
+/target
+/lib
+/classes
+/checkouts
+pom.xml
+settings.clj
+*logic.clj
+*.jar
+*.class
+.lein-deps-sum
+.lein-failures
+.lein-plugins
+.lein-env
+.lein-repl-history
