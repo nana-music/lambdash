@@ -24,6 +24,10 @@ You will need setting by re-written following file:
 
 ## Running
 
+To set your redis from mongodb(will run analyze.clj).
+
+    lein run
+
 To start a web server for the application, run:
 
     lein ring server
