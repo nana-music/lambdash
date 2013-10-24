@@ -1,10 +1,27 @@
 (ns lambdash.analysis
   (:require
+   [clj-time.local :as time-local]
+   [clj-time.format :as time-format]
    [lambdash.settings :as settings]
    [taoensso.carmine :as car :refer (wcar)]
    [clojure.java.io :as io]
    [clojure.data.csv :as csv]
    [lambdash.dblogic :as db]))
+
+;;
+;; Common Format Utility
+;;
+
+
+(def filename-format
+  (time-format/formatter "yyyyMMdd"))
+
+(def filename
+  (str
+   (time-format/unparse filename-format (time-local/local-now))
+   ".csv"))
+
+(def csv-dirname "csv/")
 
 ;;
 ;; Redis Server Pipeline Macro
@@ -68,7 +85,7 @@
 
 (defn csv-writer []
   (println "[Running] Csv write...")
-  (with-open [out-file (io/writer "outfile.csv")]
+  (with-open [out-file (io/writer (str csv-dirname filename))]
     (csv/write-csv out-file
                    (data-vector))))
 
