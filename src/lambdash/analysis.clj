@@ -16,10 +16,17 @@
 (def filename-format
   (time-format/formatter "yyyyMMdd"))
 
+(def csv-title-format
+  (time-format/formatter "yyyy-MM-dd hh:mm:ss"))
+
 (def filename
   (str
    (time-format/unparse filename-format (time-local/local-now))
    ".csv"))
+
+(def csv-title
+  (str
+   (time-format/unparse csv-title-format (time-local/local-now))))
 
 (def csv-dirname "csv/")
 
@@ -87,7 +94,7 @@
   (println "[Running] Csv write...")
   (with-open [out-file (io/writer (str csv-dirname filename))]
     (csv/write-csv out-file
-                   (data-vector))))
+                   (cons [csv-title] (data-vector)))))
 
 (defn -main []
   (println init-message)
